@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+}
+.maincontainer{
+  position: relative;
+  height: 100vh;
+}
+.upperbody{
+ z-index: 0;
+  height: 40%;
+}
+.upper_night{
+  background: url('../src/images/bg-desktop-dark.jpg') no-repeat;
+  background-size: cover;
+}
+.upper_day{
+  background: url('../src/images/bg-desktop-light.jpg') no-repeat;
+  background-size: cover;
+}
+.lowerbody{
+  z-index: 0;
+  height: 60%;
+ 
+}
+.lower_night{
+  background-color: hsl(235, 21%, 11%)
+}
+.lower_day{
+  background-color: hsl(0, 0%, 98%);
+}
+.content{
+ 
+  position:absolute;
+  top: 5%;
+  left: 30%;
+  z-index: 1;
+  width: 40vw;
+  height: 80vh;
+  
+}
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 35px;
+  letter-spacing:2vw;
+  font-weight: 300;
+}
+
+
+
+
+
+.input{
+  background-color: hsl(235, 24%, 19%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+.input span{
+  width: 25px;
+  height: 25px;
+  border: 1px solid hsl(234, 39%, 85%);
+  border-radius: 50%;
+  margin-left: 2%;
+}
+.input input{ 
+  flex-basis: 70%;
+  text-align: left;
+  height: 7vh;
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  border: 1px solid transparent;
+  border-radius: 13px;
+  outline: none;
+  color: hsl(234, 39%, 85%);
+}
+.input button{
+  border: 1px solid transparent;
+  background-color: hsl(235, 24%, 19%);
+  margin-right: 2%;
+  color: hsl(234, 11%, 52%);
+}
+.input button:hover{
+  cursor: pointer;
+}
+
+
+
+
+.lists{
+ 
+  margin-top: 5%;
+  background-color:hsl(235, 24%, 19%); 
+  
+  border-radius: 5px;
+
+}
+.list{
+  text-align: left;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+  height: 7vh;
+  width: 100%;
+  background-color: hsl(235, 24%, 19%);
+  border: 1px solid transparent;
+  outline: none;
+  color: hsl(234, 39%, 85%);
+}
+.list .check{
+ margin-left: 2%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid hsl(234, 39%, 85%);
+  border-radius: 50%;
+}
+.list .delete{
+ margin-right: 2%;
+ 
+}
+.list p{
+  text-align: left;
+  flex-basis: 70%;
+}
+.list .day{
+  color: black !important;
+}
+.justaline{
+  width: 100%;
+  height: 1px;
+  background-color: hsl(234, 39%, 85%);
+}
+.footer{
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(234, 11%, 52%);
+}
+.footer .items{
+margin-left: 2%;
+}
+.footer .clickables span{
+margin-right: 10px;
+cursor: pointer;
+}
+.footer .clear{
+  margin-right: 2%;
+  cursor: pointer;
+}
+.footer .clickables span:hover,.footer .clear:hover{
+color: hsl(234, 39%, 85%);
+}
+span{
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .content {
+   width: 80vw;
+   left: 10%
+  }
+}
